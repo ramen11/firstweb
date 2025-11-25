@@ -1,10 +1,10 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProfileController;
 
 
 Route::get('/', function(){
@@ -13,6 +13,6 @@ Route::get('/', function(){
 
 Route::post('/register', [UserController::class, 'register']);
 
-// Route::post('/login', [UserController::class, 'login']);
-require __DIR__.'/auth.php';
+
+// require __DIR__.'/auth.php';
 
