@@ -29,21 +29,21 @@ Route::get('/logout', function(){
 Route::post('/logout', [AuthenticatedSessionController::class, 'store'])->name('form.logout');
 
 
-Route::get('/main', function(){
-    return view('main');
-});
+// Route::get('/main', function(){
+//     return view('main');
+// });
 
-Route::get('/event1', function(){
-    return view('event1');
-});
-Route::get('/event2', function(){
-    return view('event2');
-});
-Route::get('/event3', function(){
-    return view('event3');
-});
-Route::get('/event4', function(){
-    return view('event4');
-});
+// Route::get('/event1', function(){
+//     return view('event1');
+// });
+// Route::get('/event2', function(){
+//     return view('event2');
+// });
+// Route::get('/event3', function(){
+//     return view('event3');
+// });
+// Route::get('/event4', function(){
+//     return view('event4');
+// });
 
 require __DIR__.'/auth.php';
