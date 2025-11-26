@@ -16,6 +16,12 @@
         <input name="password" type="text" placeholder="password">
          <input name="password_confirmation" type="password" placeholder="Confirm Password" required>
         <button>Register</button>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{$error}}</li>
+            @endforeach
+
+        </ul>
     </form>
     </div>
 </body>
