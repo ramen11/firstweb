@@ -8,5 +8,10 @@
 </head>
 <body>
     <h2>Home Page</h2>
+    <a href="{{ route('register') }}">Register</a>
+    <button onclick="window.location='{{ route('register') }}'">
+        Registration Page
+    </button>   
+
 </body>
 </html>

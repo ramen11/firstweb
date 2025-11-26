@@ -13,7 +13,7 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 Route::get('/', function(){
     return view('home');
 });
-
+Route::get('/register', [RegisteredUserController::class, 'index'])->name('form.register');
 Route::post('/register', [RegisteredUserController::class, 'store'])->name('form.register');
 
 
