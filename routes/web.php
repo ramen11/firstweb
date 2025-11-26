@@ -8,16 +8,18 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 
 
+
+
 Route::get('/', function(){
-    return view('app');
+    return view('home');
 });
 
-Route::post('/', [RegisteredUserController::class, 'store'])->name('form.register');
+Route::post('/register', [RegisteredUserController::class, 'store'])->name('form.register');
 
 
 
 Route::get('/login', function(){
-    return view('app');
+    return view('login');
 });
 
 Route::post('/login', [ConfirmablePasswordController::class, 'store'])->name('form.login');
