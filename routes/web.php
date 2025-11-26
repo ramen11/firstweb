@@ -21,8 +21,12 @@ Route::post('/register', [RegisteredUserController::class, 'store'])->name('form
 Route::get('/login', function(){
     return view('login');
 });
+Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('form.logout');
 
-Route::post('/login', [ConfirmablePasswordController::class, 'store'])->name('form.login');
+Route::get('/logout', function(){
+    return view('home');
+});
+Route::post('/logout', [AuthenticatedSessionController::class, 'store'])->name('form.logout');
 
 
 Route::get('/main', function(){

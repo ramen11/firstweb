@@ -8,6 +8,7 @@
 </head>
 <body>
     <h2>Home Page</h2>
+<<<<<<< HEAD
     {{-- <a href="{{ route('form.register') }}">Register</a> --}}
 
 
@@ -15,5 +16,15 @@
         Registration Page
     </button>   
 ='
+=======
+    <a href="{{ route('register') }}">Register</a>
+    
+    @if (!Auth::check())
+        <a href="{{ route('form.login') }}">Login</a>
+    @else
+        <a href="{{ route('form.logout') }}">Logout</a>
+
+    
+>>>>>>> 46587b3ebfdfdedc54183e530c0bd163c9a434ff
 </body>
 </html>
