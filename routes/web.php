@@ -32,6 +32,7 @@ Route::post('/logout', [AuthenticatedSessionController::class, 'store'])->name('
 Route::get('/main', function(){
     return view('main');
 });
+
 Route::get('/event1', function(){
     return view('event1');
 });
