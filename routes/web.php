@@ -25,4 +25,20 @@ Route::get('/login', function(){
 Route::post('/login', [ConfirmablePasswordController::class, 'store'])->name('form.login');
 
 
+Route::get('/main', function(){
+    return view('main');
+});
+Route::get('/event1', function(){
+    return view('event1');
+});
+Route::get('/event2', function(){
+    return view('event2');
+});
+Route::get('/event3', function(){
+    return view('event3');
+});
+Route::get('/event4', function(){
+    return view('event4');
+});
+
 require __DIR__.'/auth.php';

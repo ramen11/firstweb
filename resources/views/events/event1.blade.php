@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,13 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Home Page</h2>
-    {{-- <a href="{{ route('form.register') }}">Register</a> --}}
-
-
-    <button onclick="window.location{{ route('form.register') }}'">
-        Registration Page
-    </button>   
-='
+    
 </body>
 </html>

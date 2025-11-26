@@ -8,10 +8,10 @@
 <body>
     <h2>Welcome to the main page</h2>
    <div class="container">
-        <div class="item" onclick="window.location='{{ route('page1') }}'">Item 1</div>
-        <div class="item" onclick="window.location='{{ route('page2') }}'">Item 2</div>
-        <div class="item" onclick="window.location='{{ route('page3') }}'">Item 3</div>
-        <div class="item" onclick="window.location='{{ route('page4') }}'">Item 4</div>
+        <div class="event" onclick="window.location='{{ route('page1') }}'">Item 1</div>
+        <div class="event" onclick="window.location='{{ route('page2') }}'">Item 2</div>
+        <div class="event" onclick="window.location='{{ route('page3') }}'">Item 3</div>
+        <div class="event" onclick="window.location='{{ route('page4') }}'">Item 4</div>
     </div>
 </div>
 </body>
