@@ -24,12 +24,7 @@
         </ul>
     </form>
     </div>
-</body>
-</html>
-
-
-
-    {{-- <div style="border: 3px solid black">
+    <div style="border: 3px solid black">
     <h2>Login</h2>
     <form action ="/login" method ="POST">
         <input name="name" type="text" placeholder="name">
@@ -37,4 +32,9 @@
         <input name="password" type="text" placeholder="password">
         <button>Login</button>
     </form>
-    </div> --}}
+    </div>
+</body>
+</html>
+
+
+
