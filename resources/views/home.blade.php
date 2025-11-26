@@ -9,9 +9,12 @@
 <body>
     <h2>Home Page</h2>
     <a href="{{ route('register') }}">Register</a>
-    <button onclick="window.location='{{ route('register') }}'">
-        Registration Page
-    </button>   
+    
+    @if (!Auth::check())
+        <a href="{{ route('form.login') }}">Login</a>
+    @else
+        <a href="{{ route('form.logout') }}">Logout</a>
 
+    
 </body>
 </html>
