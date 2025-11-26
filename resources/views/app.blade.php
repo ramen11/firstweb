@@ -23,15 +23,6 @@
         </ul>
     </form>
     </div>
-    <div style="border: 3px solid black">
-    <h2>Login</h2>
-    <form action ="/login" method ="POST">
-        <input name="name" type="text" placeholder="name">
-        <input name="email" type="text" placeholder="email">
-        <input name="password" type="text" placeholder="password">
-        <button>Login</button>
-    </form>
-    </div>
 </body>
 </html>
 
