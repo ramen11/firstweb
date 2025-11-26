@@ -23,27 +23,30 @@ Route::get('/login', function(){
 });
 Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('form.logout');
 
-Route::get('/logout', function(){
-    return view('home');
+// Route::get('/logout', function(){
+//     return view('home');
+// });
+// Route::post('/logout', [AuthenticatedSessionController::class, 'store'])->name('form.logout');
+
+
+Route::get('/main', function(){
+    return view('main');
 });
-Route::post('/logout', [AuthenticatedSessionController::class, 'store'])->name('form.logout');
+
+Route::post('/main', [AuthenticatedSessionController::class, 'store'])->name('form.main');
 
 
-// Route::get('/main', function(){
-//     return view('main');
-// });
-
-// Route::get('/event1', function(){
-//     return view('event1');
-// });
-// Route::get('/event2', function(){
-//     return view('event2');
-// });
-// Route::get('/event3', function(){
-//     return view('event3');
-// });
-// Route::get('/event4', function(){
-//     return view('event4');
-// });
+Route::get('/event1', function(){
+    return view('event1');
+});
+Route::get('/event2', function(){
+    return view('event2');
+});
+Route::get('/event3', function(){
+    return view('event3');
+});
+Route::get('/event4', function(){
+    return view('event4');
+});
 
 require __DIR__.'/auth.php';
