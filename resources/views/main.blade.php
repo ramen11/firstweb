@@ -11,27 +11,54 @@
 <body>
     <div class="page">
         <header class="site-header">
-            <h1>Main</h1>
+            <h1>Welcome to my firstweb</h1>
             <p class="subtitle">Choose an event</p>
         </header>
 
         <main class="content">
             <section class="card">
-                <h2>Welcome to the main page</h2>
+                <h2>Events</h2>
 
-                <div class="container" style="margin-top:12px;">
-                    <a class="btn-primary" style="display:inline-block; text-decoration:none;" href="{{ route('form.event1') }}">Event 1</a>
+                <div style="margin-top:8px; display:flex; justify-content:flex-end;">
+                    <a class="btn-ghost" href="{{ route('form.settings') }}">Settings</a>
+                </div>
 
-                    {{-- Uncomment / add more events as needed
-                    <a class="btn-primary" style="display:inline-block; margin-left:8px; text-decoration:none;" href="{{ route('form.event2') }}">Event 2</a>
-                    <a class="btn-primary" style="display:inline-block; margin-left:8px; text-decoration:none;" href="{{ route('form.event3') }}">Event 3</a>
-                    --}}
+                <div class="events-grid">
+                    <a class="event-card" href="{{ route('form.event1') }}">
+                        <h3>Event 1</h3>
+                        <p>Quick details for event 1.</p>
+                    </a>
+
+                    <a class="event-card" href="{{ route('form.event2') }}">
+                        <h3>Event 2</h3>
+                        <p>Quick details for event 2.</p>
+                    </a>
+
+                    <a class="event-card" href="{{ route('form.event3') }}">
+                        <h3>Event 3</h3>
+                        <p>Quick details for event 3.</p>
+                    </a>
+
+                    <a class="event-card" href="{{ route('form.event4') }}">
+                        <h3>Event 4</h3>
+                        <p>Quick details for event 4.</p>
+                    </a>
+
+                    <a class="event-card" href="{{ route('form.event5') }}">
+                        <h3>Event 5</h3>
+                        <p>Quick details for event 5.</p>
+                    </a>
+
+                    <a class="event-card" href="{{ route('form.event6') }}">
+                        <h3>Event 6</h3>
+                        <p>Quick details for event 6.</p>
+                    </a>
                 </div>
             </section>
         </main>
 
         <footer class="site-footer">
-            <small>&copy; {{ date('Y') }} My App</small>
+            <small>&copy; {{ date('Y') }} firstweb</small>
         </footer>
     </div>
 </body>
