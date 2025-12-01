@@ -64,6 +64,12 @@ class ProfileController extends Controller
         if (! Hash::check($request->current_password, $user->password)) {
             return back()->withErrors(['current_password' => 'Current password is incorrect.']);
         }
+        else if ($request->current_password === $request->new_password) {
+            return back()->withErrors(['new_password' => 'New password cannot be the same as the current password.']);
+        }
+        else if ($request->new_password !== $request->new_password_confirmation) {
+            return back()->withErrors(['new_password_confirmation' => 'New password and confirmation do not match.']);
+        }
 
         $user->password = Hash::make($request->new_password);
         $user->save();

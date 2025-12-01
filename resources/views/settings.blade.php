@@ -87,15 +87,28 @@
 
           <label>Current Password:</label><br/>
           <input type="password" name="current_password" class="input"><br/><br/>
+          @error('current_password')
+            <p style="color:red;">{{ $message }}</p>
+          @enderror
 
           <label>New Password:</label><br/>
           <input type="password" name="new_password" class="input"><br/><br/>
+          @error('new_password')
+          <p style="color:red;">{{ $message }}</p>
+          @enderror
 
           <label>Confirm New Password:</label><br/>
           <input type="password" name="new_password_confirmation" class="input"><br/><br/>
-
-          <button type="submit" class="btn-primary">Change Password</button>
+          @error('new_password_confirmation')
+            <p style="color:red;">{{ $message }}</p>
+          @enderror
+          <div style="display:flex; justify-content:flex-end;">
+            <button type="submit" class="btn-primary">Change Password</button>
+          </div>
         </form>
+          @if(session('status') == 'password-updated')
+          <p style="color:green; margin-top:10px;">Password updated successfully.</p>
+        @endif
       </section>
 
 

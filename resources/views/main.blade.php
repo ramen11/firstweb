@@ -11,7 +11,7 @@
 <body>
     <div class="page">
         <header class="site-header">
-                        <div class="avatar-display avatar-button" id="avatarDisplay">
+             <div class="avatar-display avatar-button" id="avatarDisplay">
               @if(Auth::user()->avatar)
                 <img src="{{ asset('storage/' . Auth::user()->avatar) }}" alt="avatar" class="avatar-preview" id="avatarPreview" />
               @else

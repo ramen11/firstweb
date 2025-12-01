@@ -224,3 +224,53 @@ body{
   body{padding:24px 12px}
   .card{padding:16px}
 }
+
+/* improved input styling (text, email, password, textarea, .input) */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e6e9ef;
+  background: linear-gradient(180deg, #ffffff, #fbfdff);
+  font-size: 0.96rem;
+  color: #0f172a;
+  box-shadow: inset 0 -1px 0 rgba(16,24,40,0.02);
+  transition: box-shadow .14s ease, border-color .14s ease, transform .06s ease;
+}
+
+/* placeholder color */
+input::placeholder,
+textarea::placeholder { color: #9aa0b4; opacity: 1; }
+
+/* focus state */
+input:focus,
+textarea:focus,
+.input:focus {
+  outline: none;
+  border-color: rgba(79,70,229,0.9);
+  box-shadow: 0 10px 30px rgba(79,70,229,0.08);
+  transform: translateY(-1px);
+}
+
+/* invalid / error visual */
+input:invalid,
+textarea:invalid,
+.input.is-invalid {
+  border-color: rgba(239,68,68,0.9);
+  box-shadow: 0 8px 22px rgba(239,68,68,0.06);
+}
+
+/* small / compact inputs */
+.input.small { padding: 8px 10px; font-size: 0.9rem; }
+
+/* error message helper */
+.error-text { color: var(--danger); font-size: 0.9rem; margin-top: 6px; }
+
+/* keep spacing consistent inside forms */
+.auth-form input,
+.auth-form textarea,
+.auth-form .input { margin-top: 8px; margin-bottom: 8px; }
